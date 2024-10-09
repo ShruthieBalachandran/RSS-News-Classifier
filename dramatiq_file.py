@@ -30,11 +30,47 @@ def classify_article(article_data):
         nltk.download('stopwords')
 
         # Define categories and keywords
-        categories = {'terrorism': ['terrorism', 'protest', 'political unrest', 'riot'],
-                      'positive': ['positive', 'uplifting', 'good news'],
-                      'natural_disasters': ['earthquake', 'flood', 'hurricane', 'natural disaster'],
-                      'others': []
-                      }
+        categories = {
+    "Terrorism": [
+        "terrorism", "terrorist", "attack", "bombing", "extremism",
+        "militant", "insurgent", "jihad", "radicalization", "violence",
+        "threat", "hostage", "act of terror", "security", "conspiracy", "fundamentalism", "plot", "sabotage"
+    ],
+    "Protest": [
+        "protest", "demonstration", "rally", "march", "sit-in", "advocacy",
+        "campaign", "gathering", "public display", "activism", "dissent",
+        "petition", "social movement", "awareness", "outcry", "mobilization",
+        "collective action", "peaceful assembly"
+    ],
+    "Political Unrest": [
+        "political unrest", "turmoil", "chaos", "discontent", "civil strife",
+        "revolt", "rebellion", "civil war", "instability", "uprising",
+        "reform movement", "power struggle", "government dissatisfaction",
+        "policy conflict", "overthrow", "resistance", "insurrection", "judge"
+    ],
+    "Riot": [
+        "riot", "mob", "civil disorder", "unrest", "chaos", "violence",
+        "clashes", "fighting", "looting", "vandalism", "insurrection",
+        "disturbance", "aggression", "mayhem", "brawl", "street fight",
+        "violent protest"
+    ],
+    "Positive/Uplifting": [
+        "happy", "joy", "positive", "good", "uplifting", "success",
+        "achievement", "celebration", "hope", "love", "progress",
+        "inspiration", "encouragement", "smile", "community", "gratitude",
+        "kindness", "support", "unity", "wellness", "beneficial", 
+        "optimistic", "bright", "joyful", "promising", "victory"
+    ],
+    "Natural Disasters": [
+        "earthquake", "flood", "hurricane", "storm", "disaster",
+        "wildfire", "tsunami", "landslide", "avalanche", "drought",
+        "calamity", "severe weather", "catastrophe", "emergency", 
+        "rescue", "evacuation", "damage", "devastation", 
+        "natural calamity", "crisis", "heatwave", "famine", 
+        "tornado", "blizzard", "mudslide", "hazard"
+    ],
+    "Others": []
+}
         
         stop_words = set(stopwords.words('english'))
 

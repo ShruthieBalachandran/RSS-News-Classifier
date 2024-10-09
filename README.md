@@ -1,6 +1,6 @@
 # RSS-News-Classifier
 
-Overview
+**Overview**
 RSS News Classifier is an application that collects articles from various RSS feeds, stores them in a PostgreSQL database, and classifies them into predefined categories using a simple keyword-based classification model. The classification tasks are handled asynchronously using Dramatiq, a task queue library, with Redis as the message broker. nltk (Natural Language Toolkit) is used for tokenizing the article content and removing stopwords during classification.
 
 Features

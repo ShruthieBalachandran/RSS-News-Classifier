@@ -75,7 +75,10 @@ The database schema consists of a single table news_articles with the following 
 Articles are classified into the following categories based on keywords using nltk for content tokenization and stopword removal:
 
 - Terrorism
-- Positive
+- Political Unrest
+- Protest
+- Positive/uplifting
+- Riot
 - Natural Disasters
 - Others
 
